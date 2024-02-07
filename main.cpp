@@ -8,9 +8,9 @@
 HINSTANCE g_instance;
 
 void SetBackGroundImage(HDC& hdc, HBITMAP hBgImage) {
-	BITMAP          bitmap;
-	HDC             hdcMem;
-	HGDIOBJ         oldBitmap;
+	BITMAP bitmap;
+	HDC hdcMem;
+	HGDIOBJ oldBitmap;
 
 	hdcMem = CreateCompatibleDC(hdc);
 	oldBitmap = SelectObject(hdcMem, hBgImage);
